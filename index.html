@@ -50,51 +50,16 @@
         </button>
 
         <!-- Hamburger Menu - Mobile -->
-        <button
-          id="hamburger-menu"
-          class="sm:hidden flex flex-col gap-1.5 cursor-pointer"
-        >
-          <span class="w-6 h-0.5 bg-white block"></span>
-          <span class="w-6 h-0.5 bg-white block"></span>
-          <span class="w-6 h-0.5 bg-white block"></span>
+        <button id="hamburger-menu" class="sm:hidden cursor-pointer">
+          <img src="./assets/hamburger-menu.png" alt="Menu" class="w-6 h-6" />
         </button>
       </nav>
-
-      <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden sm:hidden bg-[#2a1547] border-t border-[#3a2557]"
-      >
-        <div class="max-w-[1198px] mx-auto px-4 py-4 flex flex-col gap-4">
-          <a
-            href="#about"
-            class="text-white py-2 hover:text-green-400 transition"
-            >About</a
-          >
-          <a
-            href="#episodes"
-            class="text-white py-2 hover:text-green-400 transition"
-            >Episodes</a
-          >
-          <a
-            href="#host"
-            class="text-white py-2 hover:text-green-400 transition"
-            >Host</a
-          >
-          <button
-            class="rounded-full bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-2 px-6 text-white font-semibold w-full mt-2"
-          >
-            Subscribe
-          </button>
-        </div>
-      </div>
     </header>
 
     <main>
       <!-- HERO BANNER SECTION -->
       <section
-        class="relative bg-cover bg-center py-8 sm:py-24"
-        style="background-image: url(&quot;./assets/hero-bg.png&quot;)"
+        class="relative bg-cover bg-center py-8 sm:py-24 bg-[url('./assets/hero-bg.png')]"
       >
         <div class="absolute inset-0 bg-[#1a0b2e] opacity-40"></div>
         <div class="relative max-w-[1198px] mx-auto px-4">
