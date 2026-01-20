@@ -71,11 +71,20 @@
                 alt="Podcast Circle"
                 class="w-40 sm:w-80 h-auto mx-auto"
               />
+
               <span
-                class="absolute top-2 right-2 sm:top-6 sm:right-12 bg-green-400 text-black px-2 py-0.5 rounded-full text-xs font-bold"
+                class="absolute top-2 right-2 sm:top-6 sm:right-12 bg-green-400 text-black px-2 py-0.5 rounded-full text-xs font-bold animate-ping [animation-duration:3s] [animation-delay:2s] [animation-timing-function:ease-out]"
               >
                 NEW
               </span>
+
+              <div class="absolute inset-0 flex items-center justify-center">
+                <img
+                  src="./assets/microphone.png"
+                  alt="Microphone"
+                  class="w-11 sm:w-28 h-auto sm:h-auto"
+                />
+              </div>
             </div>
 
             <!-- Heading -->
@@ -104,7 +113,11 @@
               <button
                 class="flex items-center justify-center gap-2 rounded-full border-2 border-green-400 text-green-400 py-3 px-6 sm:px-8 font-bold text-sm sm:text-base hover:bg-green-400 hover:text-black transition duration-300 active:scale-95 whitespace-nowrap"
               >
-              <img src="./assets/message.png" alt="Message" class="w-4 h-auto" />
+                <img
+                  src="./assets/message.png"
+                  alt="Message"
+                  class="w-4 h-auto"
+                />
                 Subscribe
               </button>
             </div>
