@@ -8,21 +8,18 @@
     <title>TechWave - Podcast</title>
   </head>
   <body class="bg-[#1a0b2e] text-white overflow-x-hidden">
-    <!-- NAVBAR -->
     <header class="sticky top-0 z-50 bg-[#1a0b2e] border-b border-[#3a2557]">
       <nav
         class="max-w-[1198px] mx-auto px-4 py-4 sm:py-6 flex items-center justify-between"
       >
-        <!-- Logo -->
         <div class="shrink-0">
           <img
             src="./assets/TechWave.png"
             alt="TechWave Logo"
-            class="h-8 sm:h-10"
+            class="h-8 sm:h-10 cursor-pointer"
           />
         </div>
 
-        <!-- Menu Items - Desktop -->
         <div class="hidden sm:flex items-center gap-8">
           <a
             href="#about"
@@ -41,7 +38,6 @@
           >
         </div>
 
-        <!-- Subscribe Button -->
         <button
           class="hidden sm:flex rounded-full bg-linear-[47.64deg] from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-2 px-6 text-white font-semibold hover:opacity-90 transition-opacity duration-300 items-center gap-2 cursor-pointer active:scale-95"
         >
@@ -49,7 +45,6 @@
           <img src="./assets/ArrowRight.png" alt="Arrow" class="w-4 h-4" />
         </button>
 
-        <!-- Hamburger Menu - Mobile -->
         <button id="hamburger-menu" class="sm:hidden cursor-pointer">
           <img src="./assets/hamburger-menu.png" alt="Menu" class="w-6 h-6" />
         </button>
@@ -57,14 +52,12 @@
     </header>
 
     <main>
-      <!-- HERO BANNER SECTION -->
       <section
         class="relative bg-cover bg-center py-8 sm:py-24 bg-[url('./assets/hero-bg.png')]"
       >
         <div class="absolute inset-0 bg-[#1a0b2e] opacity-40"></div>
         <div class="relative max-w-[1198px] mx-auto px-4">
           <div class="flex flex-col items-center text-center">
-            <!-- Podcast Circle with Badge -->
             <div class="relative mb-6 sm:mb-12">
               <img
                 src="./assets/hero-circle.png"
@@ -87,31 +80,28 @@
               </div>
             </div>
 
-            <!-- Heading -->
             <h1 class="text-3xl sm:text-6xl font-bold mb-3 sm:mb-6">
               TechWave
             </h1>
 
-            <!-- Description -->
             <p
               class="text-xs sm:text-base text-gray-300 mb-6 sm:mb-8 max-w-2xl px-2"
             >
-              Your daily dose of tech thoughts, productivity hacks, and personal
+              Your daily dose of tech insights, productivity hacks, and personal
               growth
             </p>
 
-            <!-- CTA Buttons -->
             <div
-              class="flex flex-col gap-3 sm:gap-6 w-full sm:w-auto sm:flex-row px-2"
+              class="flex justify-center items-center flex-wrap gap-3 sm:gap-6 w-full sm:w-auto px-2"
             >
               <button
-                class="flex items-center justify-center gap-2 rounded-full bg-linear-[47.64deg] from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-6 sm:px-8 text-white font-bold text-sm sm:text-base hover:opacity-90 transition duration-300 active:scale-95 whitespace-nowrap"
+                class="flex items-center cursor-pointer justify-center gap-2 rounded-full bg-linear-[47.64deg] from-[#F7E93F] via-[#FB09B4] to-[#9100F8] py-3 px-6 sm:px-8 text-white font-bold text-sm sm:text-base hover:opacity-90 transition duration-300 active:scale-95 whitespace-nowrap"
               >
                 <img src="./assets/spotify.png" alt="Spotify" class="w-4 h-4" />
                 Listen on Spotify
               </button>
               <button
-                class="flex items-center justify-center gap-2 rounded-full border-2 border-green-400 text-green-400 py-3 px-6 sm:px-8 font-bold text-sm sm:text-base hover:bg-green-400 hover:text-black transition duration-300 active:scale-95 whitespace-nowrap"
+                class="flex items-center cursor-pointer justify-center gap-2 rounded-full border-2 border-green-400 text-green-400 py-3 px-6 sm:px-8 font-bold text-sm sm:text-base hover:border-amber-500 hover:shadow-sm shadow-amber-500 transition duration-300 active:scale-95 whitespace-nowrap"
               >
                 <img
                   src="./assets/message.png"
@@ -125,10 +115,8 @@
         </div>
       </section>
 
-      <!-- ABOUT SECTION -->
       <section id="about" class="py-8 sm:py-24 bg-[#1a0b2e]">
         <div class="max-w-[1198px] mx-auto px-4">
-          <!-- Section Header -->
           <div class="text-center mb-8 sm:mb-16">
             <h2 class="text-2xl sm:text-5xl font-bold mb-3 sm:mb-4">
               About The Podcast
@@ -149,11 +137,18 @@
             </p>
           </div>
 
-          <!-- Statistics Grid -->
+          <hr
+            style="
+              outline: none;
+              border: none;
+              height: 1px;
+              background-color: #5c43792f;
+            "
+          />
+
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-8">
-            <!-- Stat 1 -->
             <div
-              class="text-center p-4 sm:p-8 bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg border border-[#3a2557] hover:border-green-400 transition duration-300"
+              class="text-center p-4 sm:p-8 rounded-lg hover:border-green-400 transition duration-300"
             >
               <h3 class="text-2xl sm:text-4xl font-bold text-green-400 mb-1">
                 150K+
@@ -161,9 +156,8 @@
               <p class="text-xs sm:text-sm text-gray-400">MONTHLY LISTENERS</p>
             </div>
 
-            <!-- Stat 2 -->
             <div
-              class="text-center p-4 sm:p-8 bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg border border-[#3a2557] hover:border-green-400 transition duration-300"
+              class="text-center p-4 sm:p-8 rounded-lg hover:border-green-400 transition duration-300"
             >
               <h3 class="text-2xl sm:text-4xl font-bold text-green-400 mb-1">
                 200+
@@ -171,19 +165,17 @@
               <p class="text-xs sm:text-sm text-gray-400">EPISODES PUBLISHED</p>
             </div>
 
-            <!-- Stat 3 -->
             <div
-              class="text-center p-4 sm:p-8 bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg border border-[#3a2557] hover:border-green-400 transition duration-300"
+              class="text-center p-4 sm:p-8 rounded-lg hover:border-green-400 transition duration-300"
             >
               <h3 class="text-2xl sm:text-4xl font-bold text-green-400 mb-1">
-                4.9⭐
+                4.9★
               </h3>
               <p class="text-xs sm:text-sm text-gray-400">AVERAGE RATING</p>
             </div>
 
-            <!-- Stat 4 -->
             <div
-              class="text-center p-4 sm:p-8 bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg border border-[#3a2557] hover:border-green-400 transition duration-300"
+              class="text-center p-4 sm:p-8 rounded-lg hover:border-green-400 transition duration-300"
             >
               <h3 class="text-2xl sm:text-4xl font-bold text-green-400 mb-1">
                 50+
@@ -194,19 +186,15 @@
         </div>
       </section>
 
-      <!-- WHY CHOOSE SECTION -->
-      <section class="py-8 sm:py-24 bg-[#1a0b2e]">
+      <section class="py-8 sm:py-24 bg-[#230E3D]">
         <div class="max-w-[1198px] mx-auto px-4">
-          <!-- Section Header -->
           <h2 class="text-2xl sm:text-5xl font-bold text-center mb-8 sm:mb-16">
             Why Choose TechWave
           </h2>
 
-          <!-- Features Grid - 3 Col, 3 Row Layout -->
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8">
-            <!-- Feature 1 -->
             <div
-              class="p-4 sm:p-8 bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg border border-[#3a2557] hover:border-green-400 transition duration-300 group sm:row-span-2 flex items-center justify-center"
+              class="p-4 sm:p-8 bg-[#351165] rounded-3xl hover:border-green-400 transition duration-300 group sm:row-span-2 flex items-center justify-center"
             >
               <div>
                 <img
@@ -225,9 +213,8 @@
               </div>
             </div>
 
-            <!-- Feature 2 -->
             <div
-              class="p-4 sm:p-8 bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg border border-[#3a2557] hover:border-green-400 transition duration-300 group sm:col-span-2"
+              class="p-4 sm:p-8 bg-[#351165] rounded-3xl hover:border-green-400 transition duration-300 group sm:col-span-2"
             >
               <img
                 src="./assets/device.png"
@@ -244,9 +231,8 @@
               </p>
             </div>
 
-            <!-- Feature 4 -->
             <div
-              class="p-4 sm:p-8 bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg border border-[#3a2557] hover:border-green-400 transition duration-300 group sm:col-span-2"
+              class="p-4 sm:p-8 bg-[#351165] rounded-3xl hover:border-green-400 transition duration-300 group sm:col-span-2"
             >
               <img
                 src="./assets/location.png"
@@ -263,9 +249,8 @@
               </p>
             </div>
 
-            <!-- Feature 3 -->
             <div
-              class="p-4 sm:p-8 bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg border border-[#3a2557] hover:border-green-400 transition duration-300 group sm:col-span-2"
+              class="p-4 sm:p-8 bg-[#351165] rounded-3xl hover:border-green-400 transition duration-300 group sm:col-span-2"
             >
               <img
                 src="./assets/stroke.png"
@@ -282,9 +267,8 @@
               </p>
             </div>
 
-            <!-- Feature 5 -->
             <div
-              class="p-4 sm:p-8 bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg border border-[#3a2557] hover:border-green-400 transition duration-300 group"
+              class="p-4 sm:p-8 bg-[#351165] rounded-3xl hover:border-green-400 transition duration-300 group"
             >
               <img
                 src="./assets/resource.png"
@@ -304,17 +288,13 @@
         </div>
       </section>
 
-      <!-- FEATURED EPISODES SECTION -->
       <section id="episodes" class="py-8 sm:py-24 bg-[#1a0b2e]">
         <div class="max-w-[1198px] mx-auto px-4">
-          <!-- Section Header -->
           <h2 class="text-2xl sm:text-5xl font-bold text-center mb-8 sm:mb-16">
             Featured Episodes
           </h2>
 
-          <!-- Episodes Grid -->
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8">
-            <!-- Episode 1 -->
             <div
               class="bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg overflow-hidden border border-[#3a2557] hover:border-green-400 transition duration-300 group hover:scale-105 transform"
             >
@@ -359,7 +339,6 @@
               </div>
             </div>
 
-            <!-- Episode 2 -->
             <div
               class="bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg overflow-hidden border border-[#3a2557] hover:border-green-400 transition duration-300 group hover:scale-105 transform"
             >
@@ -404,7 +383,6 @@
               </div>
             </div>
 
-            <!-- Episode 3 -->
             <div
               class="bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] rounded-lg overflow-hidden border border-[#3a2557] hover:border-green-400 transition duration-300 group hover:scale-105 transform"
             >
@@ -452,19 +430,15 @@
         </div>
       </section>
 
-      <!-- HOST SECTION -->
       <section id="host" class="py-8 sm:py-24 bg-[#1a0b2e]">
         <div class="max-w-[1198px] mx-auto px-4">
-          <!-- Section Header -->
           <h2 class="text-2xl sm:text-5xl font-bold text-center mb-8 sm:mb-16">
             Meet The Host
           </h2>
 
-          <!-- Host Content -->
           <div
             class="flex flex-col sm:flex-row items-center gap-6 sm:gap-12 bg-gradient-to-b from-[#2a1547] to-[#1a0b2e] p-6 sm:p-12 rounded-lg border border-[#3a2557] hover:border-green-400 transition duration-300"
           >
-            <!-- Host Image -->
             <div class="flex-shrink-0 w-48 sm:w-64">
               <img
                 src="./assets/host.png"
@@ -473,7 +447,6 @@
               />
             </div>
 
-            <!-- Host Info -->
             <div class="flex-1">
               <h3
                 class="text-xl sm:text-3xl font-bold mb-2 text-center sm:text-left"
@@ -490,13 +463,12 @@
                 advice for anyone looking to grow in tech.
               </p>
 
-              <!-- Social Media Links -->
               <div
                 class="flex gap-3 sm:gap-4 mt-4 sm:mt-6 items-center justify-center sm:justify-start sm:items-start"
               >
                 <a
                   href="#"
-                  class="w-10 h-10 rounded-full bg-[#3a2557] hover:bg-green-400 flex items-center justify-center transition duration-300"
+                  class="w-10 h-10 rounded-full bg-transparent border border-[#533C72] hover:bg-green-400 flex items-center justify-center transition duration-300"
                 >
                   <img
                     src="./assets/linkedin.png"
@@ -506,17 +478,13 @@
                 </a>
                 <a
                   href="#"
-                  class="w-10 h-10 rounded-full bg-[#3a2557] hover:bg-green-400 flex items-center justify-center transition duration-300"
+                  class="w-10 h-10 rounded-full bg-transparent border border-[#533C72] hover:bg-green-400 flex items-center justify-center transition duration-300"
                 >
-                  <img
-                    src="./assets/twitter.png"
-                    alt="Twitter"
-                    class="w-5 h-5"
-                  />
+                  <img src="./assets/x.png" alt="Twitter" class="w-5 h-5" />
                 </a>
                 <a
                   href="#"
-                  class="w-10 h-10 rounded-full bg-[#3a2557] hover:bg-green-400 flex items-center justify-center transition duration-300"
+                  class="w-10 h-10 rounded-full bg-transparent border border-[#533C72] hover:bg-green-400 flex items-center justify-center transition duration-300"
                 >
                   <img
                     src="./assets/instagram.png"
@@ -526,11 +494,11 @@
                 </a>
                 <a
                   href="#"
-                  class="w-10 h-10 rounded-full bg-[#3a2557] hover:bg-green-400 flex items-center justify-center transition duration-300"
+                  class="w-10 h-10 rounded-full bg-transparent border border-[#533C72] hover:bg-green-400 flex items-center justify-center transition duration-300"
                 >
                   <img
-                    src="./assets/message.png"
-                    alt="Message"
+                    src="./assets/youtube.png"
+                    alt="Youtube"
                     class="w-5 h-5"
                   />
                 </a>
@@ -541,18 +509,15 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
     <footer
       class="relative bg-cover bg-center py-8 sm:py-16 border-t border-[#3a2557]"
       style="background-image: url(&quot;./assets/footer-bg.png&quot;)"
     >
       <div class="absolute inset-0 bg-[#1a0b2e] opacity-95"></div>
       <div class="relative max-w-[1198px] mx-auto px-4">
-        <!-- Footer Content -->
         <div
           class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 mb-6 sm:mb-12"
         >
-          <!-- Logo -->
           <div>
             <img
               src="./assets/TechWave.png"
@@ -561,7 +526,6 @@
             />
           </div>
 
-          <!-- Platform Links -->
           <div class="flex flex-wrap justify-center gap-4 sm:gap-8">
             <a
               href="#"
@@ -610,12 +574,10 @@
           </div>
         </div>
 
-        <!-- Divider -->
         <div class="border-t border-[#3a2557] mb-4 sm:mb-8"></div>
 
-        <!-- Copyright -->
         <div class="text-center text-xs sm:text-sm text-gray-500">
-          <p>© 2025 TechWave Podcast. All rights reserved.</p>
+          <p>© 2026 TechWave Podcast. All rights reserved.</p>
         </div>
       </div>
     </footer>

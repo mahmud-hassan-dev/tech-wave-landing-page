@@ -1,7 +1,5 @@
 # TechWave - Podcast Website
 
-## 📌 Assignment Requirements
-
 ### ✅ Main Requirements (50 Marks)
 
 ### Navbar
